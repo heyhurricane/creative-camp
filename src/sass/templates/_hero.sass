@@ -1,0 +1,115 @@
+.hero
+  background: $light url('../img/bg.jpg') no-repeat center / cover
+  height: 100%
+  padding-bottom: 5.6rem
+  &__content
+    padding-top: 11.36rem
+    display: flex
+    flex-direction: column
+    max-width: 43rem
+  &__title
+    font-family: 'Better Together'
+    font-size: 11rem
+    color: $darkblue
+    font-weight: 400
+    margin: 0
+    &-line
+      display: flex
+      align-items: center
+      margin-top: -4.7rem
+  &__subtitle
+    font-family: 'Better Together'
+    font-size: 10rem
+    color: $darkblue
+    font-weight: 400
+    margin: 0
+    margin-left: 0.2rem
+    margin-right: 2.7rem
+    small
+      font-size: 8.3rem
+  &__heading
+    font-family: 'Lifehack Sans-Medium'
+    color: $darkblue
+    font-size: 2.4rem
+    letter-spacing: 0.9px
+    line-height: 1.3
+    margin: 0
+    margin-top: 1.9rem
+    // font-weight: 500
+  &__about
+    display: flex
+    width: 46.64rem
+    align-items: center
+    // background-color: $light
+    margin-top: 4.31rem
+    padding: 2.2rem 4.29rem
+    border-radius: 20px
+    position: relative
+    overflow: hidden
+    &::before
+      content: ''
+      position: absolute
+      border-radius: 50%
+      width: 40px
+      left: 0
+      height: 40px
+      margin: 0 -20px
+      box-shadow: 0 0 0 23.32rem $light
+      z-index: 99
+    &::after
+      content: ''
+      position: absolute
+      border-radius: 50%
+      width: 40px
+      right: 0
+      height: 40px
+      margin: 0 -20px
+      box-shadow: 0 0 0 23.32rem $light
+      z-index: 99
+  &__block
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-between
+    flex-basis: 50%
+    margin-right: 1.4rem
+    z-index: 299
+  &__price
+    color: $orange
+    font-family: "Gilroy-ExtraBold"
+    font-size: 1.29rem
+    font-weight: 400
+    margin-bottom: 0.8rem
+    letter-spacing: 0.1px
+    &--big
+      font-size: 2.57rem
+  &__text
+    color: $dark
+    font-family: 'Gilroy-Regular'
+    font-size: 1rem
+    font-weight: 400
+    letter-spacing: 0.2px
+    line-height: 1.2
+  &__button
+    flex-basis: 50%
+    padding: 2.1rem 2.71rem
+    z-index: 299
+    &:hover
+      background: $darkblue
+      box-shadow: 0 7px 18px rgba($darkblue, 0.5)
+  &__textabout
+    margin-top: 5.94rem
+    display: flex
+    align-items: center
+    max-width: 38.44rem
+  &__sponsor
+    display: flex
+    align-items: center
+  &__star
+    margin-right: 1.07rem
+  &__orgname
+    color: $darkblue
+    font-family: 'Gilroy-Regular'
+    font-size: 0.85rem
+    font-weight: 400
+    letter-spacing: 0.1px
