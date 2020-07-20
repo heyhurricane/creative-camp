@@ -391,6 +391,13 @@ img {
 .heading {
   font-family: 'Lifehack Sans-Medium'; }
 
+.simple-title {
+  color: #363b53;
+  font-family: 'Gilroy-ExtraBold';
+  font-size: 2.14rem;
+  font-weight: 400;
+  text-align: center; }
+
 @media screen and (max-width: 1340px) {
   html {
     font-size: 12px; } }
@@ -608,3 +615,145 @@ img {
     .video__button:hover {
       box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5);
       background: #363b53; }
+
+.comingtours {
+  padding: 7.86rem 0; }
+  .comingtours__tours {
+    margin: auto; }
+  .comingtours__simple-title {
+    margin-bottom: 4.14rem; }
+  .comingtours__container {
+    max-width: 1380px; }
+  .comingtours__image {
+    margin-right: 7.47rem;
+    max-width: 39.64rem; }
+  .comingtours__star {
+    margin-bottom: 1.07rem;
+    margin-top: 2.14rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .comingtours__star::after, .comingtours__star::before {
+      content: '';
+      width: 37px;
+      height: 1px;
+      background-color: #dddddd; }
+    .comingtours__star::after {
+      margin-left: 8px; }
+    .comingtours__star::before {
+      margin-right: 8px; }
+  .comingtours__info-text {
+    color: #000000;
+    font-family: 'Gilroy-Regular';
+    font-size: 1rem;
+    font-weight: 600; }
+  .comingtours__text {
+    color: #17262f;
+    font-family: 'Gilroy-Regular';
+    font-size: 0.86rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px; }
+  .comingtours__what-else {
+    display: block;
+    color: #009bfe;
+    font-family: 'Gilroy-Regular';
+    font-size: 0.93rem;
+    font-weight: 400;
+    -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+    margin-top: 2.14rem;
+    margin-bottom: 3.21rem; }
+  .comingtours__price {
+    color: #f5802d;
+    font-family: 'Gilroy-ExtraBold';
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 1.36rem; }
+    .comingtours__price-amount {
+      font-size: 3.21rem; }
+    .comingtours__price-rub {
+      font-size: 1.71rem; }
+  .comingtours__time {
+    font-family: 'Gilroy-Regular';
+    font-size: 1rem;
+    font-weight: 400;
+    color: #f5802d; }
+  .comingtours__button {
+    display: block;
+    padding: 2.29rem 2rem;
+    margin: auto;
+    margin-top: 5.71rem; }
+
+.tours {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50.71rem; }
+
+.tour {
+  cursor: pointer; }
+  .tour::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: #f5832e;
+    display: block;
+    margin-top: 1.43rem; }
+
+.season, .place {
+  color: #363b53;
+  font-size: 1rem; }
+
+.season {
+  font-family: 'Gilroy-ExtraBold';
+  font-weight: 700; }
+  .season::after {
+    content: '|';
+    margin-left: 7px;
+    margin-right: 5px; }
+
+.place {
+  font-family: 'Gilroy-Regular';
+  font-weight: 400; }
+
+.sliderwrap {
+  max-width: 98.57rem;
+  margin: auto;
+  position: relative; }
+
+.tourswiper-container {
+  max-width: 81.43rem; }
+  .tourswiper-container::before {
+    content: '';
+    display: block;
+    margin-bottom: 5.71rem;
+    width: 100%;
+    height: 1px;
+    background-color: #363b53;
+    opacity: 0.2; }
+
+.tourswiper__block {
+  display: flex; }
+
+.tourswiper-button-prev, .tourswiper-button-next {
+  background-size: 50px;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  z-index: 199;
+  top: 36%; }
+  .tourswiper-button-prev::after, .tourswiper-button-next::after {
+    display: none; }
+
+.tourswiper-button-prev {
+  background: url("../img/tours/prev.svg") no-repeat center;
+  left: -5rem; }
+
+.tourswiper-button-next {
+  background: url("../img/tours/next.svg") no-repeat center;
+  right: -5rem; }
+
+.info {
+  max-width: 29rem;
+  text-align: center;
+  padding: 2.71rem 0; }

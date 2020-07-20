@@ -1,0 +1,140 @@
+.comingtours
+  padding: 7.86rem 0
+  &__tours
+    margin: auto
+  &__simple-title
+    margin-bottom: 4.14rem
+  &__container
+    max-width: 1380px
+  &__image
+    margin-right: 7.47rem
+    max-width: 39.64rem
+  &__star
+    margin-bottom: 1.07rem
+    margin-top: 2.14rem
+    display: flex
+    align-items: center
+    justify-content: center
+    &::after, &::before
+      content: ''
+      width: 37px
+      height: 1px
+      background-color: $grey
+    &::after
+      margin-left: 8px
+    &::before
+      margin-right: 8px
+  &__info-text
+    color: $black
+    font-family: 'Gilroy-Regular'
+    font-size: 1rem
+    font-weight: 600
+  &__text
+    color: $dark
+    font-family: 'Gilroy-Regular'
+    font-size: 0.86rem
+    font-weight: 600
+    text-transform: uppercase
+    letter-spacing: 1.2px
+  &__what-else
+    display: block
+    color: $blue
+    font-family: 'Gilroy-Regular'
+    font-size: 0.93rem
+    font-weight: 400
+    text-decoration-style: dotted  
+    margin-top: 2.14rem
+    margin-bottom: 3.21rem
+  &__price
+    color: $orange
+    font-family: 'Gilroy-ExtraBold'
+    font-weight: 400
+    margin-top: 2rem
+    margin-bottom: 1.36rem
+    &-amount
+      font-size: 3.21rem
+    &-rub
+      font-size: 1.71rem
+  &__time
+    font-family: 'Gilroy-Regular'
+    font-size: 1rem
+    font-weight: 400
+    color: $orange
+  &__button
+    display: block
+    padding: 2.29rem 2rem
+    margin: auto
+    margin-top: 5.71rem
+
+.tours
+  display: flex
+  justify-content: space-between
+  max-width: 50.71rem
+
+.tour
+  cursor: pointer
+  &::after
+    content: ''
+    width: 100%
+    height: 3px
+    background-color: $brightorange
+    display: block
+    margin-top: 1.43rem
+  
+.season, .place
+  color: $darkblue
+  font-size: 1rem
+
+.season  
+  font-family: 'Gilroy-ExtraBold'
+  font-weight: 700
+  &::after
+    content: '|'
+    margin-left: 7px
+    margin-right: 5px
+
+
+.place  
+  font-family: 'Gilroy-Regular'
+  font-weight: 400
+
+.sliderwrap
+  max-width: 98.57rem
+  margin: auto
+  position: relative
+
+.tourswiper
+  &-container
+    max-width: 81.43rem
+    &::before
+      content: ''
+      display: block
+      margin-bottom: 5.71rem
+      width: 100%
+      height: 1px
+      background-color: $darkblue
+      opacity: 0.2
+  &__block
+    display: flex
+  &-button
+    &-prev, &-next
+      background-size: 50px
+      width: 50px
+      height: 50px
+      bottom: 0
+      z-index: 199
+      top: 36%
+      &::after
+        display: none
+    &-prev
+      background: url('../img/tours/prev.svg') no-repeat center
+      left: -5rem
+    &-next
+      background: url('../img/tours/next.svg') no-repeat center
+      right: -5rem
+
+.info
+  max-width: 29rem
+  text-align: center
+  padding: 2.71rem 0
+
