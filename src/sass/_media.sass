@@ -15,10 +15,15 @@
     &__contacts 
       margin-right: 0
   .hero
-    background-position-x: center
-    &__title, &__subtitle
-      // text-shadow: 2px 3px 5px $lightblue
-      // color: $lightblue
+    background-position-x: center     
+  .advice
+    &__cards
+      max-width: 24rem
+      margin: auto
+    &__card 
+      flex-basis: 100%
+      &:not(:last-child)
+        margin-bottom: 4rem 
 
 @media screen and ( max-width: 768px )
   .container
@@ -51,6 +56,11 @@
     &__about
       margin-top: 4rem
       width: 100%
+  .advantage 
+    flex-basis: 50%
+  .advantages, .advice
+    &__heading, &__title
+      text-align: center
   
 
 @media screen and ( max-width: 576px )
@@ -100,7 +110,12 @@
       &--small
         font-size: 5rem
     &__heading 
-      font-size: 2.06rem
+      font-size: 2.06rem   
+  .advantages
+    &__advantage
+      flex-basis: 100%
+      &:not(:last-child)
+        margin-bottom: 4rem
 
 @media screen and ( max-width: 375px )
   .hero
@@ -121,3 +136,6 @@
   .menu
     &__logo
       width: 120px
+  .advantages, .advice
+    &__heading
+      font-size: 2.04rem

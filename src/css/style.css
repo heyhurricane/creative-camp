@@ -852,7 +852,14 @@ img {
   .menu__contacts {
     margin-right: 0; }
   .hero {
-    background-position-x: center; } }
+    background-position-x: center; }
+  .advice__cards {
+    max-width: 24rem;
+    margin: auto; }
+  .advice__card {
+    flex-basis: 100%; }
+    .advice__card:not(:last-child) {
+      margin-bottom: 4rem; } }
 
 @media screen and (max-width: 768px) {
   .container {
@@ -884,7 +891,11 @@ img {
         margin-bottom: 1rem; }
     .hero__about {
       margin-top: 4rem;
-      width: 100%; } }
+      width: 100%; }
+  .advantage {
+    flex-basis: 50%; }
+  .advantages__heading, .advantages__title, .advice__heading, .advice__title {
+    text-align: center; } }
 
 @media screen and (max-width: 576px) {
   .container {
@@ -930,7 +941,11 @@ img {
     .hero__subtitle--small {
       font-size: 5rem; }
   .hero__heading {
-    font-size: 2.06rem; } }
+    font-size: 2.06rem; }
+  .advantages__advantage {
+    flex-basis: 100%; }
+    .advantages__advantage:not(:last-child) {
+      margin-bottom: 4rem; } }
 
 @media screen and (max-width: 375px) {
   .hero__title {
@@ -947,4 +962,6 @@ img {
   .hero__about::after, .hero__about::before {
     box-shadow: 0 0 0 20rem #ffffff; }
   .menu__logo {
-    width: 120px; } }
+    width: 120px; }
+  .advantages__heading, .advice__heading {
+    font-size: 2.04rem; } }
