@@ -2,6 +2,122 @@
   html
     font-size: 12px
 
+@media screen and ( max-width: 1200px )
+  .container
+    max-width: 992px
+  .hero
+    background-position-x: 70%
+
 @media screen and ( max-width: 992px )
   .nav
     display: none
+  .menu
+    &__contacts 
+      margin-right: 0
+  .hero
+    background-position-x: center
+    &__title, &__subtitle
+      // text-shadow: 2px 3px 5px $lightblue
+      // color: $lightblue
+
+@media screen and ( max-width: 768px )
+  .container
+    max-width: 675px
+  .hero
+    padding-bottom: 3rem
+    &__title
+      font-size: 9rem
+      &-line 
+        margin-top: -3.7rem
+    &__subtitle
+      font-size: 8rem
+      &--small
+        font-size: 7rem
+    &__heading 
+      font-size: 2.36rem
+      margin-top: 1.1rem
+      line-height: 1.1
+    &__textabout 
+      flex-direction: column
+      align-items: start
+      max-width: 22rem
+      margin-top: 3rem
+    &__orgname
+      font-size: 1rem
+    &__sponsor
+      align-items: flex-start
+      &:not(:last-child)
+        margin-bottom: 1rem
+    &__about
+      margin-top: 4rem
+      width: 100%
+  
+
+@media screen and ( max-width: 576px )
+  .container
+    max-width: 500px
+    // width: 80%
+  .hero
+    background-position-x: left
+    &__button
+      padding: 1.8rem 1.21rem
+    &__content 
+      max-width: 100%
+    &__about
+      padding: 2.2rem 2.5rem
+  .menu
+    &__phone
+      display: none
+    &__call
+      font-size: 1.2rem
+    &__logo
+      margin-right: 0
+    
+@media screen and ( max-width: 480px )
+  .hero
+    &__about
+      flex-direction: column
+      align-items: stretch
+      margin-top: 2rem
+      &::before, &::after
+        top: 50%
+        transform: translate(0, -50%)
+    &__block
+      margin-right: 0
+      align-self: center
+      margin-bottom: 1rem
+    &__price
+      align-self: center
+    &__text
+      text-align: center
+    &__title
+      font-size: 7rem
+      &-line 
+        margin-top: -2.7rem
+    &__subtitle
+      font-size: 6rem
+      margin-right: 1.9rem
+      &--small
+        font-size: 5rem
+    &__heading 
+      font-size: 2.06rem
+
+@media screen and ( max-width: 375px )
+  .hero
+    &__title
+      font-size: 6.4rem
+      &-line 
+        margin-top: -2.7rem
+    &__subtitle
+      font-size: 6rem
+      margin-right: 1.9rem
+      &--small
+        font-size: 5rem
+    &__heading 
+      font-size: 1.4rem
+    &__about
+      &::after, &::before
+        box-shadow: 0 0 0 20rem #ffffff
+  .menu
+    &__logo
+      width: 120px
