@@ -4,14 +4,18 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var windowHeight = $(window).height();
     if ($(this).scrollTop() > 0) {
-      $('.scroll-up').fadeIn();
+      // $('.scroll-up').fadeIn();
+      console.log("up1");
       if (document.getElementById("header") !== null) {
-        document.getElementById("header").style.background = "#5a52a5";
+        document.getElementById("header").style.background = "#ffffff";
+        console.log("up2");
       }
     } else {
-      $('.scroll-up').fadeOut();
+      // $('.scroll-up').fadeOut();
+      console.log("down1");
       if (document.getElementById("header") !== null) {
         document.getElementById("header").style.background = "transparent";
+        console.log("down2");
       }
     }
   });

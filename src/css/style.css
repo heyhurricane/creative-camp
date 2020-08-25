@@ -405,7 +405,7 @@ img {
   top: 0;
   width: 100%;
   position: fixed;
-  z-index: 299; }
+  z-index: 399; }
 
 .menu {
   display: flex;
@@ -442,7 +442,7 @@ img {
     font-size: 1.43rem;
     margin-right: 2.14rem; }
     .menu__phone:hover {
-      color: #ffffff; }
+      color: #ff7e00; }
   .menu__call {
     text-decoration: none;
     background-color: transparent;
@@ -452,8 +452,8 @@ img {
     border-bottom: 2px dotted #363b53;
     cursor: pointer; }
     .menu__call:hover {
-      -webkit-filter: brightness(500%);
-      filter: brightness(500%); }
+      color: #ff7e00;
+      border-color: #ff7e00; }
   .menu__icon {
     margin-right: 9px; }
 
@@ -571,7 +571,7 @@ img {
     letter-spacing: 0.1px; }
 
 .video {
-  background: #ffffff url("../img/bg-video.png") no-repeat center;
+  background: #ffffff url("../img/bg-video.jpg") no-repeat center;
   height: 100%;
   padding: 10.71rem 0;
   position: relative; }
@@ -596,8 +596,8 @@ img {
   .video__text {
     max-width: 39.71rem;
     margin: auto;
-    margin-right: 6.8rem;
-    margin-top: -0.7rem; }
+    margin-right: 8.5%;
+    margin-top: -1%; }
   .video__button {
     left: 39%;
     bottom: 26.4%;
@@ -836,15 +836,27 @@ img {
   flex-basis: 30%;
   text-align: center; }
 
+@media screen and (max-width: 1500px) {
+  .video__button {
+    left: 38%; } }
+
 @media screen and (max-width: 1340px) {
   html {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .video__button {
+    left: 39%; } }
 
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 992px; }
   .hero {
-    background-position-x: 70%; } }
+    background-position-x: 70%; }
+  .video__button {
+    left: 36%; } }
+
+@media screen and (max-width: 1100px) {
+  .video__button {
+    left: 33%; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -859,7 +871,10 @@ img {
   .advice__card {
     flex-basis: 100%; }
     .advice__card:not(:last-child) {
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem; }
+  .video__button {
+    left: 45%;
+    bottom: 5%; } }
 
 @media screen and (max-width: 768px) {
   .container {
@@ -895,7 +910,19 @@ img {
   .advantage {
     flex-basis: 50%; }
   .advantages__heading, .advantages__title, .advice__heading, .advice__title {
-    text-align: center; } }
+    text-align: center; }
+  .video {
+    padding: 5rem 0 0;
+    background: #ebfbff; }
+    .video__button {
+      position: static;
+      display: block;
+      margin: auto;
+      margin-top: 2rem; }
+    .video__text {
+      margin: auto; }
+    .video__title-line {
+      margin-left: 0; } }
 
 @media screen and (max-width: 576px) {
   .container {
@@ -913,7 +940,12 @@ img {
   .menu__call {
     font-size: 1.2rem; }
   .menu__logo {
-    margin-right: 0; } }
+    margin-right: 0; }
+  .video__heading {
+    font-size: 2.05rem;
+    margin-top: 0.6rem; }
+  .video__text {
+    max-width: 90%; } }
 
 @media screen and (max-width: 480px) {
   .hero__about {
@@ -945,7 +977,11 @@ img {
   .advantages__advantage {
     flex-basis: 100%; }
     .advantages__advantage:not(:last-child) {
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem; }
+  .video__title {
+    font-size: 6rem; }
+  .video__heading {
+    font-size: 1.8rem; } }
 
 @media screen and (max-width: 375px) {
   .hero__title {
@@ -964,4 +1000,6 @@ img {
   .menu__logo {
     width: 120px; }
   .advantages__heading, .advice__heading {
-    font-size: 2.04rem; } }
+    font-size: 2.04rem; }
+  .video__text {
+    max-width: 100%; } }
