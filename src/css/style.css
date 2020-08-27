@@ -852,11 +852,22 @@ img {
   .hero {
     background-position-x: 70%; }
   .video__button {
-    left: 36%; } }
+    left: 36%; }
+  .comingtours__container {
+    max-width: 1200px;
+    width: 100%; }
+  .comingtours__image {
+    margin-right: 2rem; }
+  .tourswiper__block {
+    justify-content: center; } }
 
 @media screen and (max-width: 1100px) {
   .video__button {
-    left: 33%; } }
+    left: 33%; }
+  .tourswiper-button-prev, .tourswiper-button-next {
+    background-size: 40px;
+    width: 40px;
+    height: 40px; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -874,7 +885,12 @@ img {
       margin-bottom: 4rem; }
   .video__button {
     left: 45%;
-    bottom: 5%; } }
+    bottom: 5%; }
+  .tourswiper__block {
+    flex-direction: column;
+    align-items: center; }
+  .comingtours__image {
+    margin-right: 0; } }
 
 @media screen and (max-width: 768px) {
   .container {
@@ -945,7 +961,27 @@ img {
     font-size: 2.05rem;
     margin-top: 0.6rem; }
   .video__text {
-    max-width: 90%; } }
+    max-width: 90%; }
+  .comingtours__image {
+    max-width: 30rem;
+    height: 30rem; }
+  .comingtours__button {
+    margin-top: 0;
+    margin-bottom: 2rem; }
+  .tours {
+    flex-direction: column;
+    align-items: center; }
+  .tour {
+    margin-bottom: 1rem; }
+    .tour--active::after {
+      margin-top: 1rem; }
+  .tourswiper-button-prev, .tourswiper-button-next {
+    top: 105%;
+    transform: translateY(0); }
+  .tourswiper-button-prev {
+    left: 30%; }
+  .tourswiper-button-next {
+    right: 30%; } }
 
 @media screen and (max-width: 480px) {
   .hero__about {
@@ -1002,4 +1038,8 @@ img {
   .advantages__heading, .advice__heading {
     font-size: 2.04rem; }
   .video__text {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .comingtours__image {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover; } }
