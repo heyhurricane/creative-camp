@@ -20,7 +20,7 @@ $(document).ready(function () {
     }
   });
 
-  // Слайдер в секции Hero
+  // Слайдер в секции Coming Tours
   var mySwiper = new Swiper('.tourswiper-container', {
     // Optional parameters
     loop: true,
@@ -39,6 +39,27 @@ $(document).ready(function () {
     effect: "fade",
     
   });
+
+  // Слайдер в секции Past Tours
+  var mySwiper = new Swiper('.pasttourswiper-container', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 40,
+    pagination: {
+      el: '.pasttourswiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.pasttourswiper-button-next',
+      prevEl: '.pasttourswiper-button-prev',
+    },
+    fadeEffect: {
+      crossFade: true,
+    },
+    effect: "fade",
+
+  });
+
 
   // переключение вкладок слайдера
   $('.comingtours__tour').click(function () {
@@ -104,5 +125,58 @@ $(document).ready(function () {
     stepBtn.addClass('tour--active');
   });
 
+  // переключение вкладок слайдера
+  $('.pasttours__tour').click(function () {
+    var page = $(this).attr('id');
+    $('.pasttours__tour').not(this).removeClass('tour--active');
+    $(this).addClass('tour--active');
+    switch(page) {
+      case 'first': 
+        mySwiper.slideTo(1);
+        break;
+      case 'second':
+        mySwiper.slideTo(2);
+        break;
+      case 'third':
+        mySwiper.slideTo(3);
+        break;
+      case 'fourth':
+        mySwiper.slideTo(4);
+        break;
+      case 'fifth':
+        mySwiper.slideTo(5);
+        break;
+      case 'sixth':
+        mySwiper.slideTo(6);
+        break;  
+      case 'seventh':
+        mySwiper.slideTo(7);
+        break;
+    }
+  });
+
+  // переключение по кнопкам
+  $('.pasttourswiper-button-prev').on('click', function () {
+    const index = mySwiper.realIndex;
+    var stepBtn = $('.pasttours__tour').slice(index, index + 1);
+    var page = stepBtn.attr('id');
+    console.log(page);
+    $('.pasttours__tour').not(stepBtn).removeClass('tour--active');
+    stepBtn.addClass('tour--active');
+
+
+  });
+
+  $('.pasttourswiper-button-next').on('click', function () {
+    // stepBtn.toggleClass('step--active');
+    const index = mySwiper.realIndex;
+    var stepBtn = $('.pasttours__tour').slice(index, index + 1);
+    var page = stepBtn.attr('id');
+    console.log(page);
+    $('.pasttours__tour').not(stepBtn).removeClass('tour--active');
+    stepBtn.addClass('tour--active');
+    // stepBtn.toggleClass('step--active');
+
+  });
  
 });

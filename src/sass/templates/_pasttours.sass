@@ -1,0 +1,119 @@
+.pasttours
+  padding: 4.56rem 0
+  &__subtitle
+    color: $darkblue
+    font-family: 'Gilroy-Regular'
+    font-size: 1.29rem
+    max-width: 30.14rem
+    font-weight: 400
+    margin: auto
+    text-align: center
+    margin-bottom: 4.34rem
+  &__tours
+    margin: auto
+    max-width: 81.42rem
+    padding: 0 2.93rem
+  &__info
+    padding: 2.61rem 0
+  &__simple-title
+    margin-bottom: 2.54rem
+  &__container
+    max-width: 1380px
+  &__image
+    margin-right: 7.47rem
+    max-width: 39.64rem
+  &__info-text
+    color: $darkblue
+    font-family: 'Gilroy-Regular'
+    font-size: 1.14rem
+    font-weight: 400
+    margin-bottom: 5.21rem
+    line-height: 1.5rem
+  &__name
+    display: block
+    color: $darkblue
+    font-family: 'Gilroy-ExtraBold'
+    font-size: 1.29rem
+    font-weight: 400
+    line-height: 1.71rem
+    margin-bottom: 0.86rem
+  &__date
+    color: $darkblue
+    font-family: 'Gilroy-Regular'
+    font-size: 1.07rem
+    font-weight: 400
+    line-height: 1.71rem
+    display: block
+    margin-bottom: 5.17rem
+  &__guests
+    &-text
+      display: block
+      color: $dark
+      font-family: 'Gilroy-Regular'
+      font-size: 0.86rem
+      font-weight: 400
+      line-height: 1.43rem
+      text-transform: uppercase
+      letter-spacing: 1.2px
+      margin-bottom: 1.67rem
+  &__guest
+    &-photo
+      margin-bottom: 1.36rem
+    &-name
+      display: block
+  &__button
+    display: block
+    padding: 1.49rem 2rem
+    margin: auto
+    margin-top: 5.41rem
+    max-width: 25.71rem
+    font-size: 1.14rem
+    &:hover
+      background: $darkblue
+      box-shadow: 0 7px 18px rgba($darkblue, 0.5)
+  &__sliderwrap
+    position: relative
+
+.guests
+  display: flex
+  justify-content: space-between
+.guest
+  display: flex
+  flex-direction: column
+  max-width: 8.57rem
+  &-name
+    color: $darkblue
+    font-family: 'Gilroy-Regular'
+    font-size: 0.93rem
+    font-weight: 400
+
+.pasttourswiper
+  &-container
+    max-width: 81.43rem
+    &::before
+      content: ''
+      display: block
+      margin-bottom: 5.41rem
+      width: 100%
+      height: 1px
+      background-color: $darkblue
+      opacity: 0.2
+  &__block
+    display: flex
+  &-button
+    &-prev, &-next
+      background-size: 50px
+      width: 50px
+      height: 50px
+      bottom: 0
+      z-index: 199
+      top: 47.8%
+      transform: translateY(-50%)
+      &::after
+        display: none
+    &-prev
+      background: url('../img/tours/prev.svg') no-repeat center
+      left: 0
+    &-next
+      background: url('../img/tours/next.svg') no-repeat center
+      right: 0

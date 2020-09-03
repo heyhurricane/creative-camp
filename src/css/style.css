@@ -680,6 +680,8 @@ img {
     .comingtours__button:hover {
       background: #363b53;
       box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5); }
+  .comingtours__sliderwrap {
+    position: relative; }
 
 .tours {
   display: flex;
@@ -714,8 +716,7 @@ img {
 
 .sliderwrap {
   max-width: 98.57rem;
-  margin: auto;
-  position: relative; }
+  margin: auto; }
 
 .tourswiper-container {
   max-width: 81.43rem; }
@@ -835,6 +836,127 @@ img {
 .card {
   flex-basis: 30%;
   text-align: center; }
+
+.pasttours {
+  padding: 4.56rem 0; }
+  .pasttours__subtitle {
+    color: #363b53;
+    font-family: 'Gilroy-Regular';
+    font-size: 1.29rem;
+    max-width: 30.14rem;
+    font-weight: 400;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 4.34rem; }
+  .pasttours__tours {
+    margin: auto;
+    max-width: 81.42rem;
+    padding: 0 2.93rem; }
+  .pasttours__info {
+    padding: 2.61rem 0; }
+  .pasttours__simple-title {
+    margin-bottom: 2.54rem; }
+  .pasttours__container {
+    max-width: 1380px; }
+  .pasttours__image {
+    margin-right: 7.47rem;
+    max-width: 39.64rem; }
+  .pasttours__info-text {
+    color: #363b53;
+    font-family: 'Gilroy-Regular';
+    font-size: 1.14rem;
+    font-weight: 400;
+    margin-bottom: 5.21rem;
+    line-height: 1.5rem; }
+  .pasttours__name {
+    display: block;
+    color: #363b53;
+    font-family: 'Gilroy-ExtraBold';
+    font-size: 1.29rem;
+    font-weight: 400;
+    line-height: 1.71rem;
+    margin-bottom: 0.86rem; }
+  .pasttours__date {
+    color: #363b53;
+    font-family: 'Gilroy-Regular';
+    font-size: 1.07rem;
+    font-weight: 400;
+    line-height: 1.71rem;
+    display: block;
+    margin-bottom: 5.17rem; }
+  .pasttours__guests-text {
+    display: block;
+    color: #17262f;
+    font-family: 'Gilroy-Regular';
+    font-size: 0.86rem;
+    font-weight: 400;
+    line-height: 1.43rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 1.67rem; }
+  .pasttours__guest-photo {
+    margin-bottom: 1.36rem; }
+  .pasttours__guest-name {
+    display: block; }
+  .pasttours__button {
+    display: block;
+    padding: 1.49rem 2rem;
+    margin: auto;
+    margin-top: 5.41rem;
+    max-width: 25.71rem;
+    font-size: 1.14rem; }
+    .pasttours__button:hover {
+      background: #363b53;
+      box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5); }
+  .pasttours__sliderwrap {
+    position: relative; }
+
+.guests {
+  display: flex;
+  justify-content: space-between; }
+
+.guest {
+  display: flex;
+  flex-direction: column;
+  max-width: 8.57rem; }
+  .guest-name {
+    color: #363b53;
+    font-family: 'Gilroy-Regular';
+    font-size: 0.93rem;
+    font-weight: 400; }
+
+.pasttourswiper-container {
+  max-width: 81.43rem; }
+  .pasttourswiper-container::before {
+    content: '';
+    display: block;
+    margin-bottom: 5.41rem;
+    width: 100%;
+    height: 1px;
+    background-color: #363b53;
+    opacity: 0.2; }
+
+.pasttourswiper__block {
+  display: flex; }
+
+.pasttourswiper-button-prev, .pasttourswiper-button-next {
+  background-size: 50px;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  z-index: 199;
+  top: 47.8%;
+  transform: translateY(-50%); }
+  .pasttourswiper-button-prev::after, .pasttourswiper-button-next::after {
+    display: none; }
+
+.pasttourswiper-button-prev {
+  background: url("../img/tours/prev.svg") no-repeat center;
+  left: 0; }
+
+.pasttourswiper-button-next {
+  background: url("../img/tours/next.svg") no-repeat center;
+  right: 0; }
 
 @media screen and (max-width: 1500px) {
   .video__button {
