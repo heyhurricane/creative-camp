@@ -5,17 +5,13 @@ $(document).ready(function () {
     var windowHeight = $(window).height();
     if ($(this).scrollTop() > 0) {
       // $('.scroll-up').fadeIn();
-      console.log("up1");
       if (document.getElementById("header") !== null) {
         document.getElementById("header").style.background = "#ffffff";
-        console.log("up2");
       }
     } else {
       // $('.scroll-up').fadeOut();
-      console.log("down1");
       if (document.getElementById("header") !== null) {
         document.getElementById("header").style.background = "transparent";
-        console.log("down2");
       }
     }
   });
@@ -41,7 +37,7 @@ $(document).ready(function () {
   });
 
   // Слайдер в секции Past Tours
-  var mySwiper = new Swiper('.pasttourswiper-container', {
+  var mySwiper2 = new Swiper('.pasttourswiper-container', {
     // Optional parameters
     loop: true,
     spaceBetween: 40,
@@ -57,6 +53,29 @@ $(document).ready(function () {
       crossFade: true,
     },
     effect: "fade",
+
+  });
+
+  // Слайдер в секции Past Tours
+  var mySwiper3 = new Swiper('.teacherswiper-container', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 40,
+    pagination: {
+      el: '.teacherswiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.teacherswiper-button-next',
+      prevEl: '.teacherswiper-button-prev',
+    },
+    fadeEffect: {
+      crossFade: true,
+    },
+    effect: "fade",
+    // autoplay: {
+    //   delay: 3000,
+    // },
 
   });
 
@@ -82,7 +101,6 @@ $(document).ready(function () {
     const index = mySwiper.realIndex;
     var stepBtn = $('.comingtours__tour').slice(index, index + 1);
     var page = stepBtn.attr('id');
-    console.log(page);
     $('.comingtours__tour').not(stepBtn).removeClass('tour--active');
     stepBtn.addClass('tour--active');
  
@@ -94,7 +112,6 @@ $(document).ready(function () {
     const index = mySwiper.realIndex;
     var stepBtn = $('.comingtours__tour').slice(index, index + 1);
     var page = stepBtn.attr('id');
-    console.log(page);
     $('.comingtours__tour').not(stepBtn).removeClass('tour--active');
     stepBtn.addClass('tour--active');
     // stepBtn.toggleClass('step--active');
@@ -104,7 +121,6 @@ $(document).ready(function () {
  // переключение слайдера по нажатию кнопки Тура в header
   $('.menu__tour-season').click(function () {
     var page = $(this).attr('id');
-    console.log(page);
     var stepBtn;
     if (page == 'fall') {
       const id=1;
@@ -132,35 +148,34 @@ $(document).ready(function () {
     $(this).addClass('tour--active');
     switch(page) {
       case 'first': 
-        mySwiper.slideTo(1);
+        mySwiper2.slideTo(1);
         break;
       case 'second':
-        mySwiper.slideTo(2);
+        mySwiper2.slideTo(2);
         break;
       case 'third':
-        mySwiper.slideTo(3);
+        mySwiper2.slideTo(3);
         break;
       case 'fourth':
-        mySwiper.slideTo(4);
+        mySwiper2.slideTo(4);
         break;
       case 'fifth':
-        mySwiper.slideTo(5);
+        mySwiper2.slideTo(5);
         break;
       case 'sixth':
-        mySwiper.slideTo(6);
+        mySwiper2.slideTo(6);
         break;  
       case 'seventh':
-        mySwiper.slideTo(7);
+        mySwiper2.slideTo(7);
         break;
     }
   });
 
   // переключение по кнопкам
   $('.pasttourswiper-button-prev').on('click', function () {
-    const index = mySwiper.realIndex;
+    const index = mySwiper2.realIndex;
     var stepBtn = $('.pasttours__tour').slice(index, index + 1);
     var page = stepBtn.attr('id');
-    console.log(page);
     $('.pasttours__tour').not(stepBtn).removeClass('tour--active');
     stepBtn.addClass('tour--active');
 
@@ -169,14 +184,46 @@ $(document).ready(function () {
 
   $('.pasttourswiper-button-next').on('click', function () {
     // stepBtn.toggleClass('step--active');
-    const index = mySwiper.realIndex;
+    const index = mySwiper2.realIndex;
     var stepBtn = $('.pasttours__tour').slice(index, index + 1);
     var page = stepBtn.attr('id');
-    console.log(page);
     $('.pasttours__tour').not(stepBtn).removeClass('tour--active');
     stepBtn.addClass('tour--active');
     // stepBtn.toggleClass('step--active');
 
   });
+
+
+  // переключение вкладок слайдера
+  $('.teachers__teacher').click(function () {
+    var page = $(this).attr('id');
+    $('.teachers__teacher').not(this).removeClass('teacher--active');
+    $(this).addClass('teacher--active');
+    switch (page) {
+      case 'teacher1':
+        mySwiper3.slideTo(1);
+        break;
+      case 'teacher2':
+        mySwiper3.slideTo(2);
+        break;
+      case 'teacher3':
+        mySwiper3.slideTo(3);
+        break;
+      case 'teacher4':
+        mySwiper3.slideTo(4);
+        break;
+    }
+  });
  
+  // кнопка читать далее в секции Преподаватели
+
+  $(function () {
+    $(".teachers__text--long").elimore({
+      maxLength: 300,
+      moreText: "Читать полностью",
+      lessText: "Свернуть текст"
+    });
+  });
+
+
 });

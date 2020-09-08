@@ -1,0 +1,79 @@
+.teachers
+  background: url('../img/teachers/bg.jpg') no-repeat center / cover
+  padding: 2.07rem 0 0
+  &__subtitle
+    color: $darkblue
+    font-family: 'Gilroy-Regular'
+    font-size: 1.29rem
+    font-weight: 400
+    max-width: 40.28rem
+    margin: auto
+    text-align: center
+    margin-bottom: 4.5rem
+  &__teacher-list
+    margin: auto
+  &__name
+    display: block
+    font-family: 'Better Together'
+    font-size: 3.43rem
+    font-weight: 400
+    line-height: 30px
+    margin-bottom: 1.57rem
+  &__position
+    display: block
+    font-family: 'Lifehack Sans-Medium'
+    font-size: 1.71rem
+    font-weight: 400
+    line-height: 30px
+    margin-bottom: 3.5rem
+  &__text
+    font-family: 'Gilroy-Regular'
+    font-size: 1.36rem
+    font-weight: 400
+    margin-bottom: 2.43rem
+    &--long
+      color: $lightgrey
+      font-family: 'Gilroy-Regular'
+      font-size: 1.14rem
+      font-weight: 400
+  
+   
+
+  
+
+.teacher
+  cursor: pointer
+  &-list
+    display: flex
+    justify-content: space-between
+    max-width: 50.71rem
+  &-name
+    color: $darkblue
+    font-family: 'Gilroy-Regular'
+    font-size: 1rem
+    font-weight: 400
+  &--active
+    &::after
+      content: ''
+      width: 100%
+      height: 3px
+      background-color: $brightorange
+      display: block
+      margin-top: 1.43rem
+
+.teacherswiper
+  &-container
+    max-width: 81.43rem
+    &::before
+      content: ''
+      display: block
+      margin-bottom: 5.41rem
+      width: 100%
+      height: 1px
+      background-color: $darkblue
+      opacity: 0.2
+  &__block
+    display: flex
+    justify-content: space-around
+
+
