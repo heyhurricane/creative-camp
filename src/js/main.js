@@ -225,5 +225,53 @@ $(document).ready(function () {
     });
   });
 
+  $('.question').click(function() {
+    var questionNumber = $(this).attr('id');
+    $('.question').not(this).removeClass('question--active');
+    $(this).addClass('question--active');
+    switch (questionNumber) {
+      case 'question1':
+        document.getElementById("questionName").innerHTML = "Питание шведский стол или порционное?"; 
+        document.getElementById("questionText").innerHTML = '5-ти разовое питание "Шведский стол". 3 основных приема пищи (завтрак, обед, ужин), а также полдник и сонник.<br>На полдник и сонник обычно дают: фрукты, сладкое, сок, кефир и т.д.'; 
+        break;
+      case 'question2':
+        document.getElementById("questionName").innerHTML = "Как передать ребёнка?"; 
+        document.getElementById("questionText").innerHTML = 'Самостоятельно привезти в лагерь, либо отправить в составе организованной группы.'; 
+        break;
+      case 'question3':
+        document.getElementById("questionName").innerHTML = "Мой ребёнок не актёр и не писатель - ему будет интересно?"; 
+        document.getElementById("questionText").innerHTML = 'На занятиях мы развиваем такие навыки, как: память, речь, внимание, работа в команде, воображение и многое другое. Учим нестандартно мыслить, смело высказывать идеи, чувствовать свободу движения. Все это пригодится ребятам в школе, институте, да и в обычной жизни.<br><br>С нами точно не соскучишься!'; 
+        break;
+      case 'question4':
+        document.getElementById("questionName").innerHTML = "Ребёнок вегетарианец, не переносит лактозу, нет прививок"; 
+        document.getElementById("questionText").innerHTML = 'Все эти моменты решаемы, если вы нас предупредите зараннее. Для ребенка в столовой мы организуем индивидуальное питание согласно вашему запросу.'; 
+        break;
+      case 'question5':
+        document.getElementById("questionName").innerHTML = "Есть ли зарядка?";
+        document.getElementById("questionText").innerHTML = 'Да, зарядка - это правильный и позитивный настрой на целый день.';
+        break;
+      case 'question6':
+        document.getElementById("questionName").innerHTML = "Во сколько подъем/ отбой ?";
+        document.getElementById("questionText").innerHTML = 'Обычно подъем происходит в 8:00, а отбой в 22:30';
+        break;
+      case 'question7':
+        document.getElementById("questionName").innerHTML = "Много ли свободного времени у ребёнка?";
+        document.getElementById("questionText").innerHTML = 'В лагере " Живая классика" у детей его практически нет! У нас столько всего интересного: занятия, кружки, спорт, вечерние мероприятия, дискотеки, бассейн и многое другое. Тихий час - тот момент, когда ребенок может посвятить время сну, своим личным делам и заданиям.';
+        break;
+      case 'question8':
+        document.getElementById("questionName").innerHTML = "Забирают ли телефон?";
+        document.getElementById("questionText").innerHTML = 'Телефоны мы не забираем, но устраиваем "День без телефона", что является очень полезным и интересным опытом для ребят- они еще больше начинают общаться и дружить. А в целом, на телефоны времени попросту не хватает.';
+        break;
+      case 'question9':
+        document.getElementById("questionName").innerHTML = "Если ребёнок не хочет на занятие, на море?";
+        document.getElementById("questionText").innerHTML = 'Обычно, все хотят везде. Но, если ребенок, например, плохо себя чувствует или "не в духе", мы даем время отлежаться или просто "побыть&nbsp;с&nbsp;собой"';
+        break;
+      case 'question10':
+        document.getElementById("questionName").innerHTML = "Как организована медицинская помощь? Если ребёнок заболеет?";
+        document.getElementById("questionText").innerHTML = 'На любой выбранной нами базе существует мед.пункт, врачи и изолятор. Врачи дежурят круглосуточно и делают обходы перед сном.';
+        break;
+
+    }
+  });
 
 });

@@ -1043,6 +1043,94 @@ img {
   display: flex;
   justify-content: space-around; }
 
+.questions {
+  padding: 7.79rem 0; }
+  .questions__title {
+    font-size: 4.29rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.46rem; }
+  .questions__heading {
+    font-size: 2.14rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 4.2rem; }
+  .questions__block {
+    display: flex; }
+  .questions__question-name {
+    margin: auto;
+    margin-bottom: 2.29rem; }
+
+.question {
+  font-family: 'Gilroy-Regular';
+  font-size: 1.07rem;
+  font-weight: 400;
+  line-height: 22px;
+  list-style-type: none;
+  margin-top: 10.8px;
+  position: relative;
+  cursor: pointer;
+  letter-spacing: 0.1px; }
+  .question::before {
+    content: '';
+    width: 6px;
+    height: 10px;
+    background: url("../img/questions/arrow.svg");
+    position: absolute;
+    top: 20%;
+    right: 3%; }
+  .question::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e0f9ff;
+    margin-top: 13.1px; }
+  .question:hover {
+    color: #f58530; }
+    .question:hover::after {
+      background-color: #f58630; }
+    .question:hover::before {
+      background: url("../img/questions/arrow-primary.svg"); }
+  .question--active {
+    color: #f58530; }
+    .question--active::after {
+      background-color: #f58630; }
+    .question--active::before {
+      background: url("../img/questions/arrow-primary.svg"); }
+
+.questions-list {
+  flex-basis: 48.6%; }
+
+.question-info {
+  flex-basis: 51.4%;
+  padding: 3.59rem 0 4.29rem 2.04rem; }
+
+.question-name {
+  font-family: 'Gilroy-Regular';
+  font-size: 1.36rem;
+  font-weight: 400;
+  line-height: 26px;
+  max-width: 23.79rem;
+  text-align: center; }
+
+.question-text {
+  color: #737993;
+  font-family: 'Gilroy-Regular';
+  font-size: 1.14rem;
+  font-weight: 400;
+  line-height: 22px;
+  max-width: 27.79rem;
+  text-align: center;
+  margin: auto; }
+
+.list {
+  padding: 0;
+  padding-left: 2px;
+  border-top: 1px #e0f9ff solid; }
+
 @media screen and (max-width: 1500px) {
   .video__button {
     left: 38%; } }
