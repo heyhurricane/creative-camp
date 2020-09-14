@@ -1062,6 +1062,16 @@ img {
   .questions__question-name {
     margin: auto;
     margin-bottom: 2.29rem; }
+  .questions__question-text {
+    margin: auto;
+    margin-bottom: 3.37rem; }
+  .questions__button {
+    padding: 1.43rem 2.93rem 1.43rem 3.29rem;
+    max-width: 18.57rem;
+    display: block;
+    margin: auto;
+    text-shadow: 0 1px 6px rgba(164, 72, 0, 0.5);
+    font-size: 1rem; }
 
 .question {
   font-family: 'Gilroy-Regular';
@@ -1123,13 +1133,192 @@ img {
   font-weight: 400;
   line-height: 22px;
   max-width: 27.79rem;
-  text-align: center;
-  margin: auto; }
+  text-align: center; }
 
 .list {
   padding: 0;
   padding-left: 2px;
   border-top: 1px #e0f9ff solid; }
+
+.programs {
+  background-color: #e0f9ff;
+  padding: 2.71rem 0 7.86rem; }
+  .programs__title {
+    font-size: 4.29rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.66rem; }
+  .programs__heading {
+    font-size: 2.14rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5.21rem; }
+  .programs__play {
+    width: 40px;
+    height: 46px; }
+  .programs__document {
+    width: 47px;
+    height: 55px; }
+  .programs__what-else {
+    display: block;
+    color: #009bfe;
+    font-family: 'Gilroy-Regular';
+    font-size: 0.93rem;
+    font-weight: 400;
+    -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted; }
+    .programs__what-else--hide {
+      display: block;
+      color: #009bfe;
+      font-family: 'Gilroy-Regular';
+      font-size: 0.93rem;
+      font-weight: 400;
+      -webkit-text-decoration-style: dotted;
+      text-decoration-style: dotted; }
+  .programs__program {
+    margin: auto;
+    margin-bottom: 5.51rem; }
+    .programs__program-name {
+      margin-bottom: 2.46rem; }
+    .programs__program-text {
+      margin-bottom: 1.46rem; }
+      .programs__program-text:last-of-type {
+        margin-bottom: 2.56rem; }
+      .programs__program-text--hide {
+        display: none; }
+    .programs__program-info:not(:nth-of-type(2)) {
+      margin-right: 6.21rem; }
+  .programs__button {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .programs__button--left {
+      left: 8%;
+      bottom: 0.6%; }
+    .programs__button--right {
+      right: 3.5%;
+      bottom: 0.6%; }
+
+.program {
+  display: flex;
+  max-width: 59.29rem;
+  justify-content: space-between; }
+  .program:nth-of-type(3) {
+    max-width: 65.09rem;
+    padding-left: 3.1rem; }
+    .program:nth-of-type(3) button {
+      left: 3%;
+      bottom: 1.7%; }
+
+.program-info {
+  max-width: 24.41rem;
+  text-align: center;
+  padding: 2.69rem 0 1.57rem; }
+
+.program-name {
+  font-family: 'Gilroy-ExtraBold';
+  font-size: 1.29rem;
+  font-weight: 400;
+  display: block; }
+
+.program-text {
+  font-family: 'Gilroy-Regular';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 20px; }
+
+.program-image {
+  position: relative;
+  max-width: 27.79rem;
+  align-self: flex-start; }
+
+.feedbacks {
+  padding: 2.71rem 0 7.86rem; }
+  .feedbacks__title {
+    font-size: 4.29rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 0.66rem; }
+  .feedbacks__container {
+    max-width: 1380px; }
+  .feedbacks__heading {
+    font-size: 2.14rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 5.41rem; }
+  .feedbacks__photo {
+    margin: 0;
+    margin-bottom: 12px; }
+  .feedbacks__image {
+    height: 100px;
+    width: 100px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 50%; }
+  .feedbacks__feedback-name {
+    margin: 0;
+    margin-bottom: 3.74rem; }
+  .feedbacks__feedback-text {
+    margin: 0;
+    margin-bottom: 3.87rem; }
+  .feedbacks__comma {
+    margin: 0; }
+  .feedbacks__sliderwrap {
+    max-width: 98.57rem;
+    margin: auto;
+    position: relative; }
+
+.feedback-name {
+  display: block;
+  color: #737993;
+  font-family: 'Gilroy-Light';
+  font-size: 1rem;
+  font-weight: 300; }
+
+.feedback-text {
+  font-family: 'Gilroy-Regular';
+  font-size: 1.14rem;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 65.93rem;
+  text-align: center;
+  letter-spacing: 0.1px; }
+
+.comma {
+  width: 29px;
+  height: 22px; }
+
+.feedbackswiper-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+
+.feedbackswiper-button-prev, .feedbackswiper-button-next {
+  background-size: 50px;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  z-index: 199;
+  top: 55.9%;
+  transform: translateY(-50%); }
+  .feedbackswiper-button-prev::after, .feedbackswiper-button-next::after {
+    display: none; }
+
+.feedbackswiper-button-prev {
+  left: 0;
+  background: url("../img/tours/prev.svg") no-repeat center; }
+
+.feedbackswiper-button-next {
+  right: 0;
+  background: url("../img/tours/next.svg") no-repeat center; }
 
 @media screen and (max-width: 1500px) {
   .video__button {

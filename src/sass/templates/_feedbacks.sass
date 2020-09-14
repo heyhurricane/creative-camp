@@ -1,0 +1,81 @@
+.feedbacks
+  padding: 2.71rem 0 7.86rem
+  &__title
+    font-size: 4.29rem
+    font-weight: 400
+    text-align: center
+    margin: 0
+    margin-bottom: 0.66rem
+  &__container
+    max-width: 1380px
+  &__heading
+    font-size: 2.14rem
+    font-weight: 400
+    text-align: center
+    margin: 0
+    margin-bottom: 5.41rem
+  &__photo
+    margin: 0
+    margin-bottom: 12px
+  &__image
+    height: 100px
+    width: 100px
+    object-fit: cover
+    border-radius: 50%
+  &__feedback-name
+    margin: 0
+    margin-bottom: 3.74rem
+  &__feedback-text
+    margin: 0
+    margin-bottom: 3.87rem
+  &__comma
+    margin: 0
+  &__sliderwrap
+    max-width: 98.57rem
+    margin: auto
+    position: relative
+    
+
+
+.feedback-name
+  display: block
+  color: $lightgrey
+  font-family: 'Gilroy-Light'
+  font-size: 1rem
+  font-weight: 300
+
+.feedback-text
+  font-family: 'Gilroy-Regular'
+  font-size: 1.14rem
+  font-weight: 400
+  line-height: 24px
+  max-width: 65.93rem
+  text-align: center
+  letter-spacing: 0.1px
+
+.comma
+  width: 29px
+  height: 22px
+
+.feedbackswiper
+  &-slide
+    display: flex
+    align-items: center
+    flex-direction: column
+  &-button
+    &-prev, &-next
+      background-size: 50px
+      width: 50px
+      height: 50px
+      bottom: 0
+      z-index: 199
+      top: 55.9%
+      transform: translateY(-50%)
+      &::after
+        display: none
+    &-prev
+      left: 0
+      background: url('../img/tours/prev.svg') no-repeat center
+    &-next
+      right: 0
+      background: url('../img/tours/next.svg') no-repeat center

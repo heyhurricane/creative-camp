@@ -79,6 +79,28 @@ $(document).ready(function () {
 
   });
 
+  // Слайдер в секции Past Tours
+  var mySwiper4 = new Swiper('.feedbackswiper-container', {
+    // Optional parameters
+    loop: true,
+    spaceBetween: 40,
+    pagination: {
+      el: '.feedbackswiper-pagination',
+      type: 'bullets',
+    },
+    navigation: {
+      nextEl: '.feedbackswiper-button-next',
+      prevEl: '.feedbackswiper-button-prev',
+    },
+    fadeEffect: {
+      crossFade: true,
+    },
+    effect: "fade",
+    // autoplay: {
+    //   delay: 3000,
+    // },
+
+  });
 
   // переключение вкладок слайдера
   $('.comingtours__tour').click(function () {
@@ -251,7 +273,7 @@ $(document).ready(function () {
         document.getElementById("questionText").innerHTML = 'Да, зарядка - это правильный и позитивный настрой на целый день.';
         break;
       case 'question6':
-        document.getElementById("questionName").innerHTML = "Во сколько подъем/ отбой ?";
+        document.getElementById("questionName").innerHTML = "Во сколько подъем/ отбой?";
         document.getElementById("questionText").innerHTML = 'Обычно подъем происходит в 8:00, а отбой в 22:30';
         break;
       case 'question7':
@@ -273,5 +295,29 @@ $(document).ready(function () {
 
     }
   });
+
+  var toggleWhatElse = false;
+  $('.programs__what-else').on('click', function () {
+    if (toggleWhatElse==false) {
+      $('.programs__program-text').removeClass('programs__program-text--hide');
+      this.innerHTML = "Свернуть текст";
+      $(this).attr('id', 'elseHide');   
+      toggleWhatElse = true;   
+    }
+    else {
+      $('.programs__program-text').addClass('programs__program-text--hide');
+      this.innerHTML = "А что ещё?";
+      $(this).attr('id', ''); 
+      toggleWhatElse = false;   
+    }
+   
+    
+    // addClass('programs__what-else--hide');
+    
+   
+  });
+
+
+  
 
 });
