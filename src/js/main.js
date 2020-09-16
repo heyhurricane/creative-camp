@@ -298,18 +298,53 @@ $(document).ready(function () {
 
   var toggleWhatElse = false;
   $('.programs__what-else').on('click', function () {
-    if (toggleWhatElse==false) {
-      $('.programs__program-text').removeClass('programs__program-text--hide');
-      this.innerHTML = "Свернуть текст";
-      $(this).attr('id', 'elseHide');   
-      toggleWhatElse = true;   
+    var whatElseNum = this.id;
+    console.log(whatElseNum);
+    switch (whatElseNum) {
+      case 'what-else1':
+        $('#hide1').removeClass('programs__program-text--hide1');
+        this.innerHTML = "Свернуть текст";
+        $(this).attr('id', 'buttonHide1');
+        break;
+      case 'what-else2':
+        $('#hide2').removeClass('programs__program-text--hide2');
+        this.innerHTML = "Свернуть текст";
+        $(this).attr('id', 'buttonHide2');
+        break;
+      case 'what-else3':
+        $('#hide3').removeClass('programs__program-text--hide3');
+        this.innerHTML = "Свернуть текст";
+        $(this).attr('id', 'buttonHide3');
+        break; 
+      case 'buttonHide1':
+        $('#hide1').addClass('programs__program-text--hide1');
+        this.innerHTML = "А что ещё?";
+        $(this).attr('id', 'what-else1');
+        break;  
+      case 'buttonHide2':
+        $('#hide2').addClass('programs__program-text--hide2');
+        this.innerHTML = "А что ещё?";
+        $(this).attr('id', 'what-else2');
+        break;  
+      case 'buttonHide3':
+        $('#hide3').addClass('programs__program-text--hide3');
+        this.innerHTML = "А что ещё?";
+        $(this).attr('id', 'what-else3');
+        break;   
+     
     }
-    else {
-      $('.programs__program-text').addClass('programs__program-text--hide');
-      this.innerHTML = "А что ещё?";
-      $(this).attr('id', ''); 
-      toggleWhatElse = false;   
-    }
+    // if (toggleWhatElse==false) {
+    //   $('.programs__program-text').removeClass('programs__program-text--hide');
+    //   this.innerHTML = "Свернуть текст";
+    //   $(this).attr('id', 'elseHide');
+    //   toggleWhatElse = true;   
+    // }
+    // else {
+    //   $('.programs__program-text').addClass('programs__program-text--hide');
+    //   this.innerHTML = "А что ещё?";
+    //   $(this).attr('id', ''); 
+    //   toggleWhatElse = false;   
+    // }
    
     
     // addClass('programs__what-else--hide');
