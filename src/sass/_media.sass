@@ -136,6 +136,16 @@
     &--active
       &::after 
         margin-top: 1rem
+  .teachers
+    background: $babyblue
+    &__image
+      display: none
+      &--small
+        display: block
+  .teacherswiper
+    &__block
+      flex-direction: column
+      align-items: center
   
 
 @media screen and ( max-width: 576px )
@@ -179,6 +189,16 @@
         left: 30%
       &-next 
         right: 30%
+  .teachers
+    &__teacher-list
+      flex-direction: column
+      align-items: center
+    &__teacher
+      margin-bottom: 1rem
+  .teacher
+    &--active
+      &::after 
+        margin-top: 1rem
 
     
 @media screen and ( max-width: 480px )
@@ -248,4 +268,4 @@
   .comingtours
     &__image
       max-width: 100%
-      object-fit: cover;
+      object-fit: cover

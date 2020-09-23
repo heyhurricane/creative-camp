@@ -1012,6 +1012,13 @@ img {
       font-family: 'Gilroy-Regular';
       font-size: 1.14rem;
       font-weight: 400; }
+  .teachers__image--small {
+    display: none;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    -o-object-fit: cover;
+    object-fit: cover; }
 
 .teacher {
   cursor: pointer; }
@@ -1499,7 +1506,16 @@ img {
   .pasttours__tour, .comingtours__tour {
     margin-bottom: 1rem; }
   .tour--active::after {
-    margin-top: 1rem; } }
+    margin-top: 1rem; }
+  .teachers {
+    background: #e0f9ff; }
+    .teachers__image {
+      display: none; }
+      .teachers__image--small {
+        display: block; }
+  .teacherswiper__block {
+    flex-direction: column;
+    align-items: center; } }
 
 @media screen and (max-width: 576px) {
   .container {
@@ -1535,7 +1551,14 @@ img {
   .tourswiper-button-prev, .pasttourswiper-button-prev {
     left: 30%; }
   .tourswiper-button-next, .pasttourswiper-button-next {
-    right: 30%; } }
+    right: 30%; }
+  .teachers__teacher-list {
+    flex-direction: column;
+    align-items: center; }
+  .teachers__teacher {
+    margin-bottom: 1rem; }
+  .teacher--active::after {
+    margin-top: 1rem; } }
 
 @media screen and (max-width: 480px) {
   .hero__about {
