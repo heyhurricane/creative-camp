@@ -1,5 +1,56 @@
 $(document).ready(function () {
  
+  var modalActive = false;
+  var messageActive = false;
+
+  // Сообщение об успешной отпрвке формы
+  // var modalMessage = $('.message');
+
+  // Модальное окно
+  var modal = $('.modal'),
+      modalBtn = $('[data-toggle=modal]'),
+      closeBtn =  $('.modal__close');
+  modalBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+    modalActive = !(modalActive);
+  });
+
+  closeBtn.on('click', function () {
+    modal.toggleClass('modal--visible');
+    modalActive = !(modalActive);
+    $('.modal__form')[0].reset();
+  });
+
+  $(document).keydown(function(event) { 
+    if (event.key=='Escape' && (modalActive)) { 
+      modal.toggleClass('modal--visible');
+      modalActive = !(modalActive);
+      $('.modal__form')[0].reset();
+    }
+    else {
+      // if (event.key=='Escape' && (messageActive)) { 
+        // modalMessage.toggleClass('message--visible');
+        // messageActive = !(messageActive);
+      // }
+
+    }
+  });
+
+  $(document).on('click', function(event) {
+    if ($(event.target).is(modal)) {
+      modal.toggleClass('modal--visible');
+      modalActive = !(modalActive);
+      $('.modal__form')[0].reset();
+    }
+    else {
+      // if ($(event.target).is(modalMessage)) {
+        // modalMessage.toggleClass('message--visible');
+        // messageActive = !(messageActive);
+      // }
+    }
+  });
+
+
   // Кнопка Наверх и Анимация
   $(window).scroll(function () {
     var windowHeight = $(window).height();
@@ -367,6 +418,76 @@ $(document).ready(function () {
     });
   }
 
-  
+  // валидация форм
+ $('.modal__form').validate({
+    errorClass: "invalid",
+    errorElement : 'div',
+    ignore: ':hidden:not(:checkbox)',
+    errorPlacement: function (error, element) {
+      if (element.attr("type") == "checkbox") {
+        return element.next('label').append(error);
+      }
+      error.insertAfter($(element));
+    },
+    rules: {
+      // simple rule, converted to {required:true}
+      nameUser: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      phoneUser: {
+        required: true,
+        minlength: 17,
+        maxlength: 17
+      },
+      // compound rule
+      emailUser: {
+        required: true,
+        email: true
+      },
+      checkUser: "required"
+    },
+    messages: {
+      nameUser: {
+        required: "Имя обязательно",
+        minlength: 'Имя не короче 2 символов',
+        maxlength: 'Имя не длиннее 15 символов'
+      },
+      phoneUser: {
+        required: "Телефон обязателен",
+        minlength: 'Телефон должен содержать 10 символов',
+        maxlength: 'Телефон должен содержать 10 символов'
+      },
+      emailUser: {
+        required: "Обязательно укажите email",
+        email: "Введите в формте: name@domain.com"
+      },
+      checkUser: "Согласие с обработкой данных обязательно"
+    },
+    submitHandler: function(form) {
+      // $(form).ajaxSubmit();
+      $.ajax({
+        type: "POST",
+        url: "sendmodal.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          // alert("Форма отправлена! Наш менеджер свяжется с Вами в течение 15 минут");
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+          modalMessage.toggleClass('message--visible');
+          messageActive = !(messageActive);
+          modalActive = !(modalActive);
+
+        },
+        error: function (response) {
+          console.log('Ошибка запроса ' + response);
+        }
+      });
+    }
+  });
+
+  // Маска для телефона
+  $('[type=tel]').mask('+7(000) 000-00-00');
 
 });
