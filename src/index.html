@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
   <title>Творческий лагерь</title>
 </head>
 
@@ -90,7 +91,9 @@
           <!-- /.hero__title-line -->
         </div>
         <!-- /.video__text -->
-        <button class="button button--play video__button"><img src="img/play.svg" alt="" class="video__play"></button>
+         <a data-fancybox href="https://www.youtube.com/watch?v=kISeqWXPrCs;autoplay=1" class="button button--play video__button">
+            <img src="img/play.svg" alt="play icon" class="video__play">
+        </a> 
       </div>
       <!-- /.container -->
     </section>
@@ -948,7 +951,9 @@
           <!-- /.program-info programs__program-info -->
           <div class="program-image programs__program-image">
             <img src="img/programs/program-1.png" alt="" class="program-photo programs__program-photo">
-            <button class="button button--play programs__button programs__button--left"><img src="img/programs/icon-2.svg" alt="" class="programs__play"></button>
+            <a data-fancybox href="https://www.youtube.com/watch?v=Zpi3dDCFC5s;autoplay=1" class="button button--play programs__button programs__button--left">
+              <img src="img/programs/icon-2.svg" alt="play icon" class="programs__play">
+            </a> 
           </div>
           <!-- /.program-image programs__program-image -->
         </div>
@@ -956,8 +961,9 @@
         <div class="program programs__program">
           <div class="program-image programs__program-image">
             <img src="img/programs/program-2.png" alt="" class="program-photo programs__program-photo">
-            <button class="button button--play programs__button programs__button--right"><img src="img/programs/icon-2.svg" alt=""
-                class="programs__play"></button>
+              <a data-fancybox href="https://www.youtube.com/watch?v=OHpVRmQngV8;autoplay=1" class="button button--play programs__button programs__button--right">
+              <img src="img/programs/icon-2.svg" alt="play icon" class="programs__play">
+            </a> 
           </div>
           <!-- /.program-image programs__program-image -->
           <div class="program-info programs__program-info">
@@ -1167,6 +1173,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <!-- <script src="js/wow.min.js"></script> -->
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/jquery.elimore.min.js"></script>
