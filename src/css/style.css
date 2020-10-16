@@ -509,9 +509,6 @@ input.invalid {
       padding: 8px 13px;
       margin-right: 0.51rem;
       text-decoration: none; }
-      .menu__tour-season:hover {
-        color: #ffffff;
-        background-color: #363b53; }
   .menu__contacts {
     margin-right: -0.7rem; }
   .menu__phone {
@@ -520,8 +517,6 @@ input.invalid {
     font-family: 'Gilroy-ExtraBold';
     font-size: 1.43rem;
     margin-right: 2.14rem; }
-    .menu__phone:hover {
-      color: #ff7e00; }
   .menu__call {
     text-decoration: none;
     background-color: transparent;
@@ -530,9 +525,6 @@ input.invalid {
     font-weight: 400;
     border-bottom: 2px dotted #363b53;
     cursor: pointer; }
-    .menu__call:hover {
-      color: #ff7e00;
-      border-color: #ff7e00; }
   .menu__icon {
     margin-right: 9px; }
 
@@ -629,9 +621,6 @@ input.invalid {
     flex-basis: 50%;
     padding: 2.1rem 2.71rem;
     z-index: 299; }
-    .hero__button:hover {
-      background: #363b53;
-      box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5); }
   .hero__textabout {
     margin-top: 5.94rem;
     display: flex;
@@ -684,9 +673,6 @@ input.invalid {
     .video__button img {
       width: 42px;
       height: 44px; }
-    .video__button:hover {
-      box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5);
-      background: #363b53; }
 
 .comingtours {
   padding: 7.86rem 0; }
@@ -757,9 +743,6 @@ input.invalid {
     padding: 2.29rem 2rem;
     margin: auto;
     margin-top: 5.71rem; }
-    .comingtours__button:hover {
-      background: #363b53;
-      box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5); }
   .comingtours__sliderwrap {
     position: relative; }
 
@@ -860,9 +843,6 @@ input.invalid {
     padding: 1.6rem 2.14rem;
     max-width: 26.91rem;
     margin: auto; }
-    .advantages__button:hover {
-      background: #363b53;
-      box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5); }
 
 .cards {
   display: flex;
@@ -988,9 +968,6 @@ input.invalid {
     margin-top: 5.41rem;
     max-width: 25.71rem;
     font-size: 1.14rem; }
-    .pasttours__button:hover {
-      background: #363b53;
-      box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5); }
   .pasttours__sliderwrap {
     position: relative; }
   .pasttours__photo {
@@ -1183,13 +1160,6 @@ input.invalid {
   height: 1px;
   background-color: #e0f9ff;
   margin-top: 13.1px; }
-
-.question:hover {
-  color: #f58530; }
-  .question:hover::after {
-    background-color: #f58630; }
-  .question:hover::before {
-    background: url("../img/questions/arrow-primary.svg"); }
 
 .question--active {
   color: #f58530; }
@@ -1857,6 +1827,40 @@ input.invalid {
     left: 30%; }
   .feedbackswiper-button-next {
     right: 30%; } }
+
+@media screen and (min-width: 993px) {
+  .advantages__button:hover {
+    background: #363b53;
+    box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5); }
+  .menu__tour-season:hover {
+    color: #ffffff;
+    background-color: #363b53; }
+  .menu__phone:hover {
+    color: #ff7e00; }
+  .menu__call:hover {
+    color: #ff7e00;
+    border-color: #ff7e00; }
+  .hero__button:hover {
+    background: #363b53;
+    box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5); }
+  .pasttours__button:hover {
+    background: #363b53;
+    box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5); }
+  .question:hover {
+    color: #f58530; }
+    .question:hover::after {
+      background-color: #f58630; }
+    .question:hover::before {
+      background: url("../img/questions/arrow-primary.svg"); }
+  .comingtours__button:hover {
+    background: #363b53;
+    box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5); }
+  .video__button:hover, .social__link:hover, .programs__button:hover, .questions__button:hover {
+    box-shadow: 0 7px 18px rgba(54, 59, 83, 0.5);
+    background: #363b53; }
+  .feedbackswiper-button-next:hover, .feedbackswiper-button-prev:hover, .pasttourswiper-button-next:hover, .pasttourswiper-button-prev:hover, .tourswiper-button-next:hover, .tourswiper-button-prev:hover {
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(255, 120, 0, 0.3); } }
 
 @media screen and (max-height: 520px) {
   .modal__dialog {
