@@ -652,7 +652,7 @@ input.invalid {
       display: flex;
       align-items: center;
       margin-left: 2.4rem;
-      margin-top: -1.2rem; }
+      margin-top: -1.6rem; }
   .video__heading {
     font-size: 2.45rem;
     color: #363b53;
@@ -675,11 +675,11 @@ input.invalid {
       height: 44px; }
 
 .comingtours {
-  padding: 7.86rem 0; }
+  padding: 5.16rem 0 6.3rem; }
   .comingtours__tours {
     margin: auto; }
   .comingtours__simple-title {
-    margin-bottom: 4.14rem; }
+    margin-bottom: 3.54rem; }
   .comingtours__container {
     max-width: 1380px; }
   .comingtours__image {
@@ -687,8 +687,8 @@ input.invalid {
   .comingtours__photo {
     margin-right: 7.47rem; }
   .comingtours__star {
-    margin-bottom: 1.07rem;
-    margin-top: 2.14rem;
+    margin-bottom: 0.67rem;
+    margin-top: 2.04rem;
     display: flex;
     align-items: center;
     justify-content: center; }
@@ -701,11 +701,17 @@ input.invalid {
       margin-left: 8px; }
     .comingtours__star::before {
       margin-right: 8px; }
+    .comingtours__star--hide1, .comingtours__star--hide2, .comingtours__star--hide3 {
+      display: none; }
   .comingtours__info-text {
     color: #000000;
     font-family: 'Gilroy-Regular';
     font-size: 1rem;
-    font-weight: 600; }
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.1px; }
+    .comingtours__info-text--hide1, .comingtours__info-text--hide2, .comingtours__info-text--hide3 {
+      display: none; }
   .comingtours__text {
     color: #17262f;
     font-family: 'Gilroy-Regular';
@@ -722,13 +728,13 @@ input.invalid {
     -webkit-text-decoration-style: dotted;
     text-decoration-style: dotted;
     margin-top: 2.14rem;
-    margin-bottom: 3.21rem; }
+    margin-bottom: 2.81rem; }
   .comingtours__price {
     color: #f5802d;
     font-family: 'Gilroy-ExtraBold';
     font-weight: 400;
-    margin-top: 2rem;
-    margin-bottom: 1.36rem; }
+    margin-top: 1.2rem;
+    margin-bottom: 0.96rem; }
     .comingtours__price-amount {
       font-size: 3.21rem; }
     .comingtours__price-rub {
@@ -740,9 +746,10 @@ input.invalid {
     color: #f5802d; }
   .comingtours__button {
     display: block;
-    padding: 2.29rem 2rem;
+    padding: 2rem 1.6rem;
     margin: auto;
-    margin-top: 5.71rem; }
+    margin-top: 5.71rem;
+    margin-bottom: 2rem; }
   .comingtours__sliderwrap {
     position: relative; }
 
@@ -759,7 +766,7 @@ input.invalid {
     height: 3px;
     background-color: #f5832e;
     display: block;
-    margin-top: 1.43rem; }
+    margin-top: 1.23rem; }
 
 .season, .place {
   color: #363b53;
@@ -801,29 +808,31 @@ input.invalid {
   height: 50px;
   bottom: 0;
   z-index: 199;
-  top: 50%;
+  top: 47%;
   transform: translateY(-50%); }
   .tourswiper-button-prev::after, .tourswiper-button-next::after {
     display: none; }
 
 .tourswiper-button-prev {
-  background: url("../img/tours/prev.svg") no-repeat center; }
+  background: url("../img/tours/prev.svg") no-repeat center;
+  left: 0; }
 
 .tourswiper-button-next {
-  background: url("../img/tours/next.svg") no-repeat center; }
+  background: url("../img/tours/next.svg") no-repeat center;
+  right: 0; }
 
 .info {
-  max-width: 29rem;
+  max-width: 29.3rem;
   text-align: center;
   padding: 2.71rem 0; }
 
 .advantages {
-  background: url(../img/bg-blue.png) no-repeat center/cover;
-  padding: 8.49rem 0 7.86rem; }
+  background-color: #d3f6ff;
+  padding: 6.59rem 0 7.86rem; }
   .advantages__title {
     font-size: 4.29rem;
     font-weight: 400;
-    max-width: 21.43rem;
+    max-width: 20.13rem;
     margin: auto;
     margin-bottom: 1.43rem; }
   .advantages__heading {
@@ -870,9 +879,16 @@ input.invalid {
     max-width: 19.38rem;
     text-align: center; }
 
+.curved-div {
+  background: #ff3c00;
+  color: #FFF;
+  text-align: center; }
+
 .advice {
   padding: 10rem 0 8.07rem;
-  background: url(../img/advice/bg-advice.png) no-repeat center/cover; }
+  background-color: #ebfbff;
+  border-bottom-left-radius: 50% 7%;
+  border-bottom-right-radius: 50% 7%; }
   .advice__title {
     font-size: 4.29rem;
     font-weight: 400;
@@ -1669,13 +1685,17 @@ input.invalid {
   .advantages__heading, .advantages__title, .advice__heading, .advice__title {
     text-align: center; }
   .video {
-    padding: 5rem 0 0;
+    padding: 5rem 0;
     background: #ebfbff; }
     .video__button {
       position: static;
-      display: block;
+      display: flex;
       margin: auto;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      width: 80px;
+      height: 80px;
+      justify-content: center;
+      align-items: center; }
     .video__text {
       margin: auto; }
     .video__title-line {

@@ -1,9 +1,9 @@
 .comingtours
-  padding: 7.86rem 0
+  padding: 5.16rem 0 6.3rem  
   &__tours
     margin: auto
   &__simple-title
-    margin-bottom: 4.14rem
+    margin-bottom: 3.54rem
   &__container
     max-width: 1380px
   &__image
@@ -11,8 +11,8 @@
   &__photo
     margin-right: 7.47rem
   &__star
-    margin-bottom: 1.07rem
-    margin-top: 2.14rem
+    margin-bottom: 0.67rem
+    margin-top: 2.04rem
     display: flex
     align-items: center
     justify-content: center
@@ -25,11 +25,17 @@
       margin-left: 8px
     &::before
       margin-right: 8px
+    &--hide1, &--hide2, &--hide3
+      display: none
   &__info-text
     color: $black
     font-family: 'Gilroy-Regular'
     font-size: 1rem
     font-weight: 600
+    line-height: 1.4
+    letter-spacing: 0.1px
+    &--hide1, &--hide2, &--hide3
+      display: none
   &__text
     color: $dark
     font-family: 'Gilroy-Regular'
@@ -45,13 +51,13 @@
     font-weight: 400
     text-decoration-style: dotted  
     margin-top: 2.14rem
-    margin-bottom: 3.21rem
+    margin-bottom: 2.81rem
   &__price
     color: $orange
     font-family: 'Gilroy-ExtraBold'
     font-weight: 400
-    margin-top: 2rem
-    margin-bottom: 1.36rem
+    margin-top: 1.2rem
+    margin-bottom: 0.96rem
     &-amount
       font-size: 3.21rem
     &-rub
@@ -63,9 +69,10 @@
     color: $orange
   &__button
     display: block
-    padding: 2.29rem 2rem
+    padding: 2rem 1.6rem
     margin: auto
     margin-top: 5.71rem
+    margin-bottom: 2rem
   &__sliderwrap
     position: relative
 
@@ -84,7 +91,7 @@
       height: 3px
       background-color: $brightorange
       display: block
-      margin-top: 1.43rem
+      margin-top: 1.23rem
   
 .season, .place
   color: $darkblue
@@ -127,17 +134,19 @@
       height: 50px
       bottom: 0
       z-index: 199
-      top: 50%
+      top: 47%
       transform: translateY(-50%)
       &::after
         display: none
     &-prev
       background: url('../img/tours/prev.svg') no-repeat center
+      left: 0
     &-next
       background: url('../img/tours/next.svg') no-repeat center
+      right: 0
 
 .info
-  max-width: 29rem
+  max-width: 29.3rem
   text-align: center
   padding: 2.71rem 0
 
