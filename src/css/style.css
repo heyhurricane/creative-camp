@@ -880,15 +880,11 @@ input.invalid {
     text-align: center; }
 
 .curved-div {
-  background: #ff3c00;
-  color: #FFF;
-  text-align: center; }
+  margin: -4px 0; }
 
 .advice {
   padding: 10rem 0 8.07rem;
-  background-color: #ebfbff;
-  border-bottom-left-radius: 50% 7%;
-  border-bottom-right-radius: 50% 7%; }
+  background-color: #ebfbff; }
   .advice__title {
     font-size: 4.29rem;
     font-weight: 400;
@@ -1222,7 +1218,7 @@ input.invalid {
   outline: none;
   transition: 0.5s;
   background-color: #ffffff;
-  padding: 0; }
+  padding: 0 20px 0 0; }
   .accordion::before {
     content: url("../img/questions/arrow.svg");
     width: 6px;
@@ -1233,7 +1229,7 @@ input.invalid {
   .accordion::after {
     content: '';
     display: block;
-    width: 100%;
+    width: 105%;
     height: 1px;
     background-color: #e0f9ff;
     margin-top: 13.1px; }
