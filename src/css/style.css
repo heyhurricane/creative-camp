@@ -1767,7 +1767,11 @@ input.invalid {
   .feedbackswiper-button-prev {
     left: 35%; }
   .feedbackswiper-button-next {
-    right: 35%; } }
+    right: 35%; }
+  .comingtours {
+    padding: 5.16rem 0 9.4rem; }
+  .pasttours {
+    padding: 4.56rem 0 6.96rem; } }
 
 @media screen and (max-width: 480px) {
   .hero__about {
