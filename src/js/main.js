@@ -405,101 +405,48 @@ $(document).ready(function () {
 
   // var toggleWhatElse = false;
   $('.comingtours__what-else').on('click', function () {
-    
     var index = mySwiper.realIndex;
-    // var whatElseNum = this.id;
-   
     var whatElseNum = this.id;
-    console.log(whatElseNum);
     switch (whatElseNum) {
       case 'whatelse1':
-        console.log("in1");
         $('#starhide1').removeClass('comingtours__star--hide1');
         $('#cominghide1').removeClass('comingtours__info-text--hide1');
         this.innerHTML = "Свернуть текст";
         $(this).attr('id', 'btnHide1');
         break;
       case 'whatelse2':
-        console.log("in2");
         $('#starhide2').removeClass('comingtours__star--hide2');
         $('#cominghide2').removeClass('comingtours__info-text--hide2');
         this.innerHTML = "Свернуть текст";
         $(this).attr('id', 'btnHide2');
         break;
-      case 'whatelse3':
-        console.log("in3");
-        $('#starhide3').removeClass('comingtours__star--hide3');
-        $('#cominghide3').removeClass('comingtours__info-text--hide3');
-        this.innerHTML = "Свернуть текст";
-        $(this).attr('id', 'btnHide3');
-        break; 
+      // case 'whatelse3':
+      //   $('.comingtours__star').removeClass('comingtours__star--hide3');
+      //   $('.comingtours__info-text').removeClass('comingtours__info-text--hide3');
+        // stepBtn.toggleClass('comingtours__info-text--hide3');
+        // this.innerHTML = "Свернуть текст";
+        // $(this).attr('id', 'btnHide3');
+        // break; 
       case 'btnHide1':
-        console.log("out1");
         $('#starhide1').addClass('comingtours__star--hide1');
         $('#cominghide1').addClass('comingtours__info-text--hide1');
         this.innerHTML = "А что ещё?";
         $(this).attr('id', 'whatelse1');
         break;  
       case 'btnHide2':
-        console.log("out2");
         $('#starhide2').addClass('comingtours__star--hide2');
         $('#cominghide2').addClass('comingtours__info-text--hide2');
         this.innerHTML = "А что ещё?";
         $(this).attr('id', 'whatelse2');
         break;  
-      case 'btnHide3':
-        console.log("out3");
-        $('#starhide3').addClass('comingtours__star--hide3');
-        $('#cominghide3').addClass('comingtours__info-text--hide3');
-        this.innerHTML = "А что ещё?";
-        $(this).attr('id', 'whatelse3');
-        break;   
+      // case 'btnHide3':
+      //   $('.comingtours__star--hide').addClass('comingtours__star--hide3');
+      //   $('.comingtours__info-text--hide').addClass('comingtours__info-text--hide3');
+      //   this.innerHTML = "А что ещё?";
+      //   $(this).attr('id', 'whatelse2');
+      //   break;    
      
     }
-    // switch (index) {
-    //   case 0:
-    //     if (this.id!='btnHide1') {
-    //       $('#starhide1').removeClass('comingtours__star--hide1');
-    //       $('#cominghide1').removeClass('comingtours__info-text--hide1');
-    //       this.innerHTML = "Свернуть текст";
-    //       $(this).attr('id', 'btnHide1');
-    //     }
-    //     else {
-    //       $('#starhide1').addClass('comingtours__star--hide1');
-    //       $('#cominghide1').addClass('comingtours__info-text--hide1');
-    //       this.innerHTML = "А что ещё?";
-    //       document.getElementById("btnHide1").removeAttribute('id');
-    //     } 
-    //     break; 
-    //   case 1:
-    //     if (this.id!='btnHide2') {
-    //       $('#starhide2').removeClass('comingtours__star--hide2');
-    //       $('#cominghide2').removeClass('comingtours__info-text--hide2');
-    //       this.innerHTML = "Свернуть текст";
-    //       $(this).attr('id', 'btnHide2');
-    //     }
-    //     else {
-    //       $('#starhide2').addClass('comingtours__star--hide2');
-    //       $('#cominghide2').addClass('comingtours__info-text--hide2');
-    //       this.innerHTML = "А что ещё?";
-    //       document.getElementById("btnHide2").removeAttribute('id');
-    //     } 
-    //     break; 
-    //   case 2:
-    //     if (this.id!='btnHide4') {
-    //       $('#starhide4').removeClass('comingtours__star--hide4');
-    //       $('#cominghide4').removeClass('comingtours__info-text--hide4');
-    //       this.innerHTML = "Свернуть текст";
-    //       $(this).attr('id', 'btnHide4');
-    //     }
-    //     else {
-    //       $('#starhide4').addClass('comingtours__star--hide4');
-    //       $('#cominghide4').addClass('comingtours__info-text--hide4');
-    //       this.innerHTML = "А что ещё?";
-    //       document.getElementById("btnHide4").removeAttribute('id');
-    //     } 
-    //     break; 
-    //   }
   });
 
   var acc = document.getElementsByClassName("accordion");
