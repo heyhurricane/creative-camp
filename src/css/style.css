@@ -759,14 +759,17 @@ input.invalid {
   max-width: 50.71rem; }
 
 .tour {
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1.43rem; }
   .tour--active::after {
     content: '';
     width: 100%;
     height: 3px;
     background-color: #f5832e;
     display: block;
-    margin-top: 1.23rem; }
+    margin-top: 1.4rem;
+    position: absolute; }
 
 .season, .place {
   color: #363b53;
@@ -828,29 +831,29 @@ input.invalid {
 
 .advantages {
   background-color: #d3f6ff;
-  padding: 6.59rem 0 7.86rem; }
+  padding: 1.79rem 0 8.36rem; }
   .advantages__title {
     font-size: 4.29rem;
     font-weight: 400;
     max-width: 20.13rem;
     margin: auto;
-    margin-bottom: 1.43rem; }
+    margin-bottom: 0.93rem; }
   .advantages__heading {
     font-size: 2.14rem;
     font-weight: 400;
     max-width: 36.78rem;
     margin: auto;
-    margin-bottom: 5.71rem; }
+    margin-bottom: 5.21rem; }
   .advantages__advantage {
-    margin-bottom: 6.07rem; }
+    margin-bottom: 5.87rem; }
     .advantages__advantage-image {
-      margin-bottom: 2.79rem; }
+      margin-bottom: 2.29rem; }
     .advantages__advantage-text {
       margin-bottom: 1.78rem; }
   .advantages__button {
     display: block;
-    padding: 1.6rem 2.14rem;
-    max-width: 26.91rem;
+    padding: 1.3rem 1.34rem;
+    max-width: 25.61rem;
     margin: auto; }
 
 .cards {
@@ -862,7 +865,7 @@ input.invalid {
 .advantage {
   display: flex;
   flex-direction: column;
-  flex-basis: 30%;
+  flex-basis: 31.5%;
   align-items: center; }
   .advantage-text {
     font-family: 'Gilroy-ExtraBold';
@@ -883,34 +886,34 @@ input.invalid {
   margin: -4px 0; }
 
 .advice {
-  padding: 10rem 0 8.07rem;
+  padding: 1.95rem 0 8.07rem;
   background-color: #ebfbff; }
   .advice__title {
     font-size: 4.29rem;
     font-weight: 400;
-    max-width: 13.57rem;
+    max-width: 14.17rem;
     margin: auto;
-    margin-bottom: 1.43rem; }
+    margin-bottom: 0.93rem; }
   .advice__heading {
     font-size: 2.14rem;
     font-weight: 400;
     max-width: 48.57rem;
     margin: auto;
-    margin-bottom: 5.71rem; }
+    margin-bottom: 5.21rem; }
   .advice-text {
     font-family: 'Gilroy-Regular';
     font-size: 1.14rem;
     font-weight: 400;
     line-height: 24px; }
   .advice__card-image {
-    margin-bottom: 3.57rem; }
+    margin-bottom: 2.77rem; }
 
 .card {
-  flex-basis: 30%;
+  flex-basis: 31.7%;
   text-align: center; }
 
 .pasttours {
-  padding: 4.56rem 0; }
+  padding: 0.86rem 0 8.1rem; }
   .pasttours__subtitle {
     color: #363b53;
     font-family: 'Gilroy-Regular';
@@ -927,7 +930,8 @@ input.invalid {
   .pasttours__info {
     padding: 2.61rem 0; }
   .pasttours__simple-title {
-    margin-bottom: 2.54rem; }
+    margin-bottom: 2.54rem;
+    letter-spacing: 0.2px; }
   .pasttours__container {
     max-width: 1380px; }
   .pasttours__image {
@@ -977,7 +981,6 @@ input.invalid {
     display: block;
     padding: 1.49rem 2rem;
     margin: auto;
-    margin-top: 5.41rem;
     max-width: 25.71rem;
     font-size: 1.14rem; }
   .pasttours__sliderwrap {
@@ -1004,7 +1007,7 @@ input.invalid {
   .pasttourswiper-container::before {
     content: '';
     display: block;
-    margin-bottom: 5.41rem;
+    margin-bottom: 5.71rem;
     width: 100%;
     height: 1px;
     background-color: #363b53;
@@ -1019,7 +1022,7 @@ input.invalid {
   height: 50px;
   bottom: 0;
   z-index: 199;
-  top: 47.8%;
+  top: 46.3%;
   transform: translateY(-50%); }
   .pasttourswiper-button-prev::after, .pasttourswiper-button-next::after {
     display: none; }
@@ -1034,7 +1037,7 @@ input.invalid {
 
 .teachers {
   background: url("../img/teachers/bg.jpg") no-repeat center/cover;
-  padding: 2.07rem 0 0; }
+  padding: 1.77rem 0 0; }
   .teachers__subtitle {
     color: #363b53;
     font-family: 'Gilroy-Regular';
@@ -1043,7 +1046,10 @@ input.invalid {
     max-width: 40.28rem;
     margin: auto;
     text-align: center;
-    margin-bottom: 4.5rem; }
+    margin-bottom: 4.4rem; }
+  .teachers__simple-title {
+    margin: 0;
+    margin-bottom: 2.5rem; }
   .teachers__teacher-list {
     margin: auto; }
   .teachers__name {
@@ -1079,11 +1085,13 @@ input.invalid {
     object-fit: cover; }
 
 .teacher {
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 1.23rem; }
   .teacher-list {
     display: flex;
     justify-content: space-between;
-    max-width: 50.71rem; }
+    max-width: 47.41rem; }
   .teacher-name {
     color: #363b53;
     font-family: 'Gilroy-Regular';
@@ -1095,7 +1103,8 @@ input.invalid {
     height: 3px;
     background-color: #f5832e;
     display: block;
-    margin-top: 1.43rem; }
+    margin-top: 1.15rem;
+    position: absolute; }
 
 .teacherswiper-container {
   max-width: 81.43rem; }
@@ -1113,7 +1122,7 @@ input.invalid {
   justify-content: space-around; }
 
 .questions {
-  padding: 7.79rem 0; }
+  padding: 7.19rem 0; }
   .questions__title {
     font-size: 4.29rem;
     font-weight: 400;
@@ -1250,7 +1259,7 @@ input.invalid {
 
 .programs {
   background-color: #e0f9ff;
-  padding: 2.71rem 0 7.86rem; }
+  padding: 2.11rem 0 2.26rem; }
   .programs__title {
     font-size: 4.29rem;
     font-weight: 400;
@@ -1276,7 +1285,8 @@ input.invalid {
     font-size: 0.93rem;
     font-weight: 400;
     -webkit-text-decoration-style: dotted;
-    text-decoration-style: dotted; }
+    text-decoration-style: dotted;
+    margin-top: 2.6rem; }
     .programs__what-else--hide {
       display: block;
       color: #009bfe;
@@ -1325,7 +1335,7 @@ input.invalid {
       bottom: 1.7%; }
 
 .program-info {
-  max-width: 24.41rem;
+  max-width: 25.11rem;
   text-align: center;
   padding: 2.69rem 0 1.57rem; }
 
@@ -1347,7 +1357,7 @@ input.invalid {
   align-self: flex-start; }
 
 .feedbacks {
-  padding: 2.71rem 0 7.86rem; }
+  padding: 2.01rem 0 7.86rem; }
   .feedbacks__title {
     font-size: 4.29rem;
     font-weight: 400;
