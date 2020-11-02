@@ -1083,6 +1083,17 @@ input.invalid {
     width: 150px;
     -o-object-fit: cover;
     object-fit: cover; }
+  .teachers__read-more {
+    display: block;
+    color: #009bfe;
+    font-family: 'Gilroy-Regular';
+    font-size: 0.93rem;
+    font-weight: 400;
+    -webkit-text-decoration-style: dotted;
+    text-decoration-style: dotted;
+    margin-top: 3.43rem; }
+  .teachers__text-more {
+    display: none; }
 
 .teacher {
   cursor: pointer;

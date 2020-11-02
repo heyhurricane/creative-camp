@@ -191,6 +191,14 @@ $(document).ready(function () {
 
   });
 
+  mySwiper.on('slideChange', function () {
+    const index = mySwiper.realIndex;
+    var stepBtn = $('.comingtours__tour').slice(index, index + 1);
+    var page = stepBtn.attr('id');
+    $('.comingtours__tour').not(stepBtn).removeClass('tour--active');
+    stepBtn.addClass('tour--active');
+  });
+
  // переключение слайдера по нажатию кнопки Тура в header
   $('.menu__tour-season').click(function () {
     var page = $(this).attr('id');
@@ -266,6 +274,13 @@ $(document).ready(function () {
 
   });
 
+  mySwiper2.on('slideChange', function () {
+    const index = mySwiper2.realIndex;
+    var stepBtn = $('.pasttours__tour').slice(index, index + 1);
+    var page = stepBtn.attr('id');
+    $('.pasttours__tour').not(stepBtn).removeClass('tour--active');
+    stepBtn.addClass('tour--active');
+  });
 
   // переключение вкладок слайдера
   $('.teachers__teacher').click(function () {
@@ -287,16 +302,24 @@ $(document).ready(function () {
         break;
     }
   });
+
+  mySwiper3.on('slideChange', function () {
+    const index = mySwiper3.realIndex;
+    var stepBtn = $('.teacher').slice(index, index + 1);
+    var page = stepBtn.attr('id');
+    $('.teacher').not(stepBtn).removeClass('teacher--active');
+    stepBtn.addClass('teacher--active');
+  });
  
   // кнопка читать далее в секции Преподаватели
 
-  $(function () {
-    $(".teachers__text--long").elimore({
-      maxLength: 300,
-      moreText: "Читать полностью",
-      lessText: "Свернуть текст"
-    });
-  });
+  // $(function () {
+  //   $(".teachers__text--long").elimore({
+  //     maxLength: 300,
+  //     moreText: "Читать полностью",
+  //     lessText: "Свернуть текст"
+  //   });
+  // });
 
   $('.question').click(function() {
     var questionNumber = $(this).attr('id');
@@ -446,6 +469,44 @@ $(document).ready(function () {
       //   $(this).attr('id', 'whatelse2');
       //   break;    
      
+    }
+  });
+
+
+  $('.teachers__read-more').on('click', function () {
+    var index = mySwiper3.realIndex;
+    var whatElseNum = this.id;
+    switch (whatElseNum) {
+      case 'readmore1':
+        $('#moretext1').removeClass('teachers__text-more');
+        this.innerHTML = "Свернуть текст";
+        $(this).attr('id', 'btnless1');
+        break;
+      case 'readmore2':
+        $('#moretext2').removeClass('teachers__text-more');
+        this.innerHTML = "Свернуть текст";
+        $(this).attr('id', 'btnless2');
+        break;
+      case 'readmore3':
+        $('#moretext3').removeClass('teachers__text-more');
+        this.innerHTML = "Свернуть текст";
+        $(this).attr('id', 'btnless3');
+        break;
+      case 'btnless1':
+        $('#moretext1').addClass('teachers__text-more');
+        this.innerHTML = "Читать польностью";
+        $(this).attr('id', 'readmore1');
+        break;  
+      case 'btnless2':
+        $('#moretext2').addClass('teachers__text-more');
+        this.innerHTML = "Читать польностью";
+        $(this).attr('id', 'readmore2');
+        break;  
+      case 'btnless3':
+        $('#moretext3').addClass('teachers__text-more');
+        this.innerHTML = "Читать польностью";
+        $(this).attr('id', 'readmore3');
+        break;  
     }
   });
 
